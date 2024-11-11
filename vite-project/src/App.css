@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, .App {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Estilo da seção principal com vídeo */
+.main-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.button {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+/* Configuração das seções subsequentes */
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+.image-gallery, .team-photos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.image-gallery img, .team-photos img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.full-width-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+/* Rodapé */
+.footer {
+  padding: 40px;
+  text-align: center;
+  background-color: #111;
+  width: 100%;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
