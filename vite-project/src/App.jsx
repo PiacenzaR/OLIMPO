@@ -1,12 +1,13 @@
 import React from 'react';
+import './App.css';
 
 function AppContent() {
     return (
         <div className="App">
-            {/* Seção principal com vídeo de fundo */}
+            {/* Seção principal com o vídeo de fundo */}
             <section className="main-section">
                 <video autoPlay loop muted className="background-video">
-                    <source src="academia.Mp4" type="video/mp4" />
+                    <source src="academia.mp4" type="video/mp4" />
                     Seu navegador não suporta a tag de vídeo.
                 </video>
                 <div className="overlay">
@@ -18,7 +19,7 @@ function AppContent() {
                 </div>
             </section>
 
-            {/* Seção 1 */}
+            {/* Seções subsequentes */}
             <section className="section">
                 <h2>Força, foco, disciplina</h2>
                 <p>A motivação está dentro de você!</p>
@@ -29,16 +30,12 @@ function AppContent() {
                 </div>
             </section>
 
-            {/* Seção 2 */}
             <section className="section">
                 <h2>No OLIMPO, cada treino é um desafio</h2>
                 <p>Se desafie e evolua com a gente!</p>
-                <div className="content-box">
-                    <img src="imagem4.jpg" alt="Imagem 4" />
-                </div>
+                <img src="imagem4.jpg" alt="Desafio no OLIMPO" className="section-image" />
             </section>
 
-            {/* Seção 3 */}
             <section className="section">
                 <h2>Equipe OLIMPO</h2>
                 <div className="team-photos">
@@ -47,11 +44,10 @@ function AppContent() {
                 </div>
             </section>
 
-            {/* Seção 4 */}
             <section className="section">
                 <h2>Motivação e Resultados</h2>
                 <p>Conquiste o seu melhor com a nossa equipe de treinadores especializados!</p>
-                <img src="imagem5.jpg" alt="Imagem da academia" className="full-width-image" />
+                <img src="imagem5.jpg" alt="Academia" className="full-width-image" />
             </section>
 
             {/* Rodapé */}
